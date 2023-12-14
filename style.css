@@ -72,18 +72,19 @@ h6 {
     /* Dark color for better readability */
     font-family: 'Oxygen', sans-serif;
     margin-top: 0;
+
 }
 
 h1 {
     font-size: 2.5em;
     /* Adjust size as needed */
-    font-weight: 700;
+    font-weight: 800;
     /* Bold weight for h1 */
 }
 
 h2 {
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 900;
     /* Bold weight for h2 */
 }
 
@@ -126,6 +127,7 @@ h3 {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+
 }
 
 /* Skills Section */
@@ -133,6 +135,10 @@ h3 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    border: 2px solid black;
+    /* Black border around the skills section */
+    background-color: transparent;
+    /* No fill color */
 }
 
 .skill--content ul {
@@ -159,6 +165,10 @@ h3 {
 /* Portfolio Section */
 #portfolio {
     padding: 20px;
+    border: 2px solid black;
+    /* Black border around the portfolio section */
+    background-color: transparent;
+    /* No fill color */
 }
 
 .center {
@@ -183,54 +193,45 @@ h3 {
 .project-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* Fixed two columns */
     gap: 20px;
 }
 
 .project {
     background-color: #fff;
+    /* Individual projects have a white background */
     padding: 15px;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    /* Ensures content fits within the borders */
 }
 
 .project img {
     max-width: 100%;
-    /* Maximum width of 100% of its container */
     max-height: 300px;
-    /* Maximum height limit */
     height: auto;
     display: block;
-    /* Makes image a block element */
     margin: 0 auto;
-    /* Centers image horizontally */
     border-radius: 4px;
     object-fit: cover;
-    /* Ensures the image covers the area nicely */
 }
 
 .google-play-button {
     display: inline-block;
     padding: 10px 15px;
     background-color: #1a73e8;
-    /* Google Play blue */
     color: white;
     text-align: center;
     border-radius: 4px;
     text-decoration: none;
-    /* Removes underline from <a> element */
     font-weight: bold;
     margin-top: 10px;
-    /* Spacing above the button */
 }
 
 .google-play-button:hover {
     background-color: #0f5bb5;
-    /* Darker blue on hover */
     cursor: pointer;
 }
+
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
