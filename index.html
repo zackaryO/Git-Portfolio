@@ -15,7 +15,7 @@
     <nav class="site-header">
         <div class="nav-logo">
             <a href="index.html">
-                <!-- <img src="assets/images/logo.png" alt="logo" width="314" height="60"> -->
+                <img src="assets/images/banner.png" alt="logo" width="314" height="60">
             </a>
         </div>
         <!-- <button class="hamburger"><img src="assets/images/menu.png" alt="menu toggle icon"></button> -->
@@ -79,33 +79,65 @@
         <section id="portfolio">
             <h2 class="center">Portfolio - Class Projects</h2>
             <div class="content portfolio--content">
-                <p>During my time at Weber State University, I completed several projects...</p>
+                <p>During my time at Weber State University, I completed several projects...
+                    Click the project to view my repo.
+                </p>
 
                 <!-- Angular with Node.js Section -->
+                <!-- Android Development (Java) Section -->
                 <div class="technology-section">
-                    <h3>Angular & Node.js Projects</h3>
+                    <h3>Android Development (Java)</h3>
                     <div class="project-list">
-                        <!-- Project 1 -->
-                        <!-- Add Angular & Node.js projects here -->
+                        <!-- Project 1: Z-Recipies -->
                         <div class="project">
-                            <h3>Z-Recipies</h3>
-                            <p>Short description of Project 1.</p>
-                            <img src="assets/images/Z-Recipies.gif" alt="Project 1 GIF">
+                            <a href="https://github.com/zackaryO/ZRecipes" target="_blank" class="project-link">
+                                <h3>Z-Recipies</h3>
+                                <img src="assets/images/Z-Recipies.gif" alt="Project 1 GIF">
+                                <h4>Description:</h4>
+                                <p>This project was build as my final in CS 3270 - Mobile Development for Android. This
+                                    application uses
+                                    an API call to pull recipe info from a 3rd party API provider. The application
+                                    temporarily stores
+                                    the search results in a local SQL database using Entity. This application has been
+                                    published to
+                                    Google Play.</p>
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.tracks.zrecipes&pli=1"
+                                target="_blank" class="google-play-button">
+                                <button>See in Google Play</button>
+                            </a>
+                        </div>
+
+                        <!-- Project 2: BMI Calculator -->
+                        <div class="project">
+                            <a href="https://github.com/zackaryO/CS3270MI" target="_blank" class="project-link">
+                                <h3>BMI Calculator</h3>
+                                <img src="assets/images/BMI.gif" alt="Project 2 GIF">
+                                <h4>Description:</h4>
+                                <p>This is a project from CS 3270, this one is used to calculate the BMI score.</p>
+                            </a>
                         </div>
                     </div>
                 </div>
+
 
                 <!-- React with Node.js Section -->
                 <div class="technology-section">
                     <h3>React & Node.js Projects</h3>
                     <div class="project-list">
                         <!-- Project 2 -->
-                        <!-- Add React & Node.js projects here -->
-                        <div class="project">
-                            <h3>Prject 2</h3>
-                            <p>Short description of Project 2.</p>
-                            <img src="assets/images/Z-Recipies.gif" alt="Project 2 GIF">
-                        </div>
+                        <a href="https://github.com/zackaryO/3750-Guessing-Game" target="_blank" class="project-link">
+                            <div class="project">
+                                <h3>MERN Guessing Game</h3>
+                                <img src="assets/images/MERN_Guess.gif" alt="Project 2 GIF">
+                                <h4>Description:</h4>
+                                <p>This was an assignment for 3750 Software Engineering II class.
+                                    To make this assignment work, you will have to create a Mongodb and update the .env
+                                    connection string.
+                                </p>
+
+                            </div>
+                        </a>
                     </div>
                 </div>
 
@@ -114,12 +146,36 @@
                     <h3>Angular & Django Projects</h3>
                     <div class="project-list">
                         <!-- Project 3 -->
-                        <!-- Add Angular & Django projects here -->
-                        <div class="project">
-                            <h3>Prject 3</h3>
-                            <p>Short description of Project 3.</p>
-                            <img src="assets/images/Z-Recipies.gif" alt="Project 3 GIF">
-                        </div>
+                        <a href="https://github.com/zackaryO/lease_manager" target="_blank" class="project-link">
+                            <div class="project">
+                                <h3>Lease Manager</h3>
+                                <img src="assets/images/lease_manger.gif" alt="Project 3 GIF">
+                                <h4>Description:</h4>
+                                <p>This is a work in progress. I am buiding a site to help a client manage his trailer
+                                    park leases and payments</p>
+                            </div>
+                        </a>
+                        <!-- Project 4 -->
+                        <a href="https://github.com/zackaryO/Portfolio" target="_blank" class="project-link">
+                            <div class="project">
+                                <h3>Portfolio</h3>
+                                <img src="assets/images/portfolio.gif" alt="Project 3 GIF">
+                                <h4>Description:</h4>
+                                <p>This is a work in progress. This project started as a final project for two class,
+                                    CS 3620: Server-side web development using Python with the Django framework and CS
+                                    3650: Computer/human interaction.
+                                    The Django side uses multiple sql databases, for user accounts with authentication
+                                    and for portfolio artifacts. The server
+                                    uses server side rendered pages for site maintaince (CRUD operations), using Django
+                                    serializers, views and templates. The front end was to demonstrate UI design
+                                    principles
+                                    I chose Angular. Angular is fetching the data from the back end server using RestFUL
+                                    API calls.
+
+
+                                </p>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
@@ -129,27 +185,24 @@
         </section>
 
 
+        <section id="contact">
+            <div class="content">
+                <h2 class="center">Contact Me</h2>
+                <p>Email: ZACKOTTERSTROM@WEBER.EDU</p>
+                <p>LinkedIn: <a
+                        href="https://www.linkedin.com/in/zack-otterstrom-13092964">https://www.linkedin.com/in/zack-otterstrom-13092964</a>
+                </p>
+            </div>
+        </section>
 
-    </section>
+        <footer class="site-footer">
+            <!-- <p>&copy; <time datetime="2023">2023,</time> Zack Otterstrom. All rights reserved.</p> -->
+        </footer>
 
-    <section id="contact">
-        <div class="content">
-            <h2 class="center">Contact Me</h2>
-            <p>Email: ZACKOTTERSTROM@WEBER.EDU</p>
-            <p>LinkedIn: <a
-                    href="https://www.linkedin.com/in/zack-otterstrom-13092964">https://www.linkedin.com/in/zack-otterstrom-13092964</a>
-            </p>
-        </div>
-    </section>
-
-    <footer class="site-footer">
-        <!-- <p>&copy; <time datetime="2023">2023,</time> Zack Otterstrom. All rights reserved.</p> -->
-    </footer>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 
 </html>

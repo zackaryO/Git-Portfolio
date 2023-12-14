@@ -68,7 +68,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #333;
+    color: #000000;
     /* Dark color for better readability */
     font-family: 'Oxygen', sans-serif;
     margin-top: 0;
@@ -93,11 +93,10 @@ h3 {
 
 /* Banner Section */
 .banner {
-    background: url('path-to-banner-image.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(255, 255, 255, 0.805), rgba(255, 255, 255, 0.811)), url('assets/images/banner.png') no-repeat center center/cover;
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    /* White text for banner */
 }
 
 .banner--content h1 {
@@ -201,6 +200,27 @@ h3 {
     border-radius: 4px;
     object-fit: cover;
     /* Ensures the image covers the area nicely */
+}
+
+.google-play-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #1a73e8;
+    /* Google Play blue */
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    /* Removes underline from <a> element */
+    font-weight: bold;
+    margin-top: 10px;
+    /* Spacing above the button */
+}
+
+.google-play-button:hover {
+    background-color: #0f5bb5;
+    /* Darker blue on hover */
+    cursor: pointer;
 }
 
 /* Responsive adjustments for smaller screens */
