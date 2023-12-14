@@ -1,0 +1,249 @@
+/* General Styles */
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #333;
+    /* Darker text color for better readability */
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #0056b3;
+    /* Slightly darker blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.center {
+    text-align: center;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Navigation */
+.site-header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-logo {
+    float: left;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    float: right;
+    margin-right: 20px;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    padding: 20px 0;
+}
+
+/* Headings */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333;
+    /* Dark color for better readability */
+    font-family: 'Oxygen', sans-serif;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    /* Adjust size as needed */
+    font-weight: 700;
+    /* Bold weight for h1 */
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+    /* Bold weight for h2 */
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+/* Banner Section */
+.banner {
+    background: url('path-to-banner-image.jpg') no-repeat center center/cover;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    /* White text for banner */
+}
+
+.banner--content h1 {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.banner--content p {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+}
+
+/* About Section */
+.about-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Skills Section */
+.skill--content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.skill--content ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Creates a responsive 2 or 3 column layout */
+    gap: 10px;
+    /* Space between grid items */
+}
+
+.skill--content li {
+    background-color: #e9ecef;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    color: #333;
+    /* Dark text for readability */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional: Adds subtle shadow for depth */
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.portfolio--content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.technology-section {
+    margin-bottom: 30px;
+}
+
+.technology-section h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Fixed two columns */
+    gap: 20px;
+}
+
+.project {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* Ensures content fits within the borders */
+}
+
+.project img {
+    max-width: 100%;
+    /* Maximum width of 100% of its container */
+    max-height: 300px;
+    /* Maximum height limit */
+    height: auto;
+    display: block;
+    /* Makes image a block element */
+    margin: 0 auto;
+    /* Centers image horizontally */
+    border-radius: 4px;
+    object-fit: cover;
+    /* Ensures the image covers the area nicely */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .project-list {
+        grid-template-columns: 1fr;
+        /* Single column on smaller screens */
+    }
+}
+
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+}
