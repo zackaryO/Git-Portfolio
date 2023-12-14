@@ -99,6 +99,15 @@ h3 {
     color: #fff;
 }
 
+.banner--content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+
 .banner--content h1 {
     font-family: 'Oxygen', sans-serif;
     font-weight: 700;
