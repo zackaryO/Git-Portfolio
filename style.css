@@ -141,7 +141,7 @@ h3 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     /* Black border around the skills section */
     background-color: transparent;
     /* No fill color */
@@ -171,7 +171,7 @@ h3 {
 /* Portfolio Section */
 #portfolio {
     padding: 20px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     /* Black border around the portfolio section */
     background-color: transparent;
     /* No fill color */
