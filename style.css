@@ -270,6 +270,19 @@ h3 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
+    .site-header {
+        height: 50px;
+        /* Adjust header height for small screens if necessary */
+    }
+
+    .banner {
+        padding-top: 110px;
+        /* Adjust banner padding for small screens */
+        margin-top: 50px;
+        /* Adjust margin-top to match the new header height */
+    }
+
     .nav-links ul {
         flex-direction: column;
         align-items: center;
