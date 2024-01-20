@@ -157,7 +157,7 @@ a:hover {
 .skill--content li {
     background-color: #e9ecef;
     padding: 15px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     border-radius: 4px;
     color: #333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -165,7 +165,7 @@ a:hover {
 
 /* Portfolio Section */
 #portfolio {
-    padding: 20px;
+    padding: 10px;
     background-color: transparent;
 }
 
