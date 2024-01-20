@@ -169,7 +169,7 @@ a:hover {
 /* Portfolio Section */
 #portfolio {
     padding: 10px;
-    background-color: #d3d3d3;
+    /* background-color: #d3d3d3; */
 }
 
 .portfolio--content {
