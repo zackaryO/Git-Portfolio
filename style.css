@@ -143,7 +143,7 @@ a:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: transparent;
+    background-color: #d3d3d3;
 }
 
 .skill--content ul {
