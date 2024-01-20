@@ -51,7 +51,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px;
+    padding: 10px 20px;
 }
 
 .nav-logo img {
@@ -134,7 +134,7 @@ a:hover {
 /* Banner Section */
 .banner {
     background: linear-gradient(rgba(255, 255, 255, 0.805), rgba(255, 255, 255, 0.811)), url('assets/images/banner.png') no-repeat center center/cover;
-    padding: 160px 0 100px;
+    padding: 100px 0 100px;
     text-align: center;
 }
 
