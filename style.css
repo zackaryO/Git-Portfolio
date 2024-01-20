@@ -42,6 +42,8 @@ a:hover {
     width: 100%;
     top: 0;
     z-index: 1000;
+    height: 60px;
+    /* Explicit height set for the header */
 }
 
 .nav-logo {
@@ -101,9 +103,12 @@ h3 {
 /* Banner Section */
 .banner {
     background: linear-gradient(rgba(255, 255, 255, 0.805), rgba(255, 255, 255, 0.811)), url('assets/images/banner.png') no-repeat center center/cover;
-    padding: 100px 0;
+    padding: 160px 0 100px;
+    /* Increased padding-top to push content below the header */
     text-align: center;
     color: #fff;
+    margin-top: 60px;
+    /* Push down the banner to compensate for the fixed header */
 }
 
 .banner--content {
