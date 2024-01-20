@@ -13,6 +13,19 @@ html {
     /* All text is black */
 }
 
+/* Headings */
+h1 {
+    font-size: 2em;
+    /* Larger font size for h1 */
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5em;
+    /* Smaller font size for h2 */
+    font-weight: bold;
+}
+
 body {
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #f4f4f4;
