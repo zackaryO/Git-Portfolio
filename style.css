@@ -42,30 +42,34 @@ a:hover {
     width: 100%;
     top: 0;
     z-index: 1000;
-    height: 60px;
-    /* Explicit height set for the header */
+    /* Remove the fixed height to allow the content to determine the height */
 }
 
 .nav-logo {
-    float: left;
     padding: 10px 20px;
+    display: inline-block;
+    /* Changed from float to inline-block */
 }
 
 .nav-links {
-    float: right;
-    margin-right: 20px;
+    /* Removed float:right; add text-align for positioning */
+    text-align: right;
+    padding: 10px 20px;
 }
 
 .nav-links ul {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    /* Below styles added for  1 1 */
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .nav-links li {
-    margin-left: 20px;
-    padding: 20px 0;
+    padding: 10px 0;
+    /* Removed margin-left for responsive design */
 }
 
 /* Headings */
@@ -102,13 +106,13 @@ h3 {
 
 /* Banner Section */
 .banner {
+    /* Adjusted padding-top to allow for dynamic header height */
+    padding-top: 70px;
+    /* Adjust according to actual height of the header */
+    padding-bottom: 100px;
     background: linear-gradient(rgba(255, 255, 255, 0.805), rgba(255, 255, 255, 0.811)), url('assets/images/banner.png') no-repeat center center/cover;
-    padding: 160px 0 100px;
-    /* Increased padding-top to push content below the header */
     text-align: center;
     color: #fff;
-    margin-top: 60px;
-    /* Push down the banner to compensate for the fixed header */
 }
 
 .banner--content {
@@ -244,15 +248,6 @@ h3 {
 }
 
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    .project-list {
-        grid-template-columns: 1fr;
-        /* Single column on smaller screens */
-    }
-}
-
-
 /* Contact Section */
 #contact {
     background-color: #fff;
@@ -282,22 +277,63 @@ h3 {
     }
 
     .banner {
-        padding-top: 110px;
-        /* Adjust banner padding for small screens */
-        margin-top: 50px;
-        /* Adjust margin-top to match the new header height */
+        padding-top: 130px;
+        /* Increased padding-top to ensure header does not overlap */
     }
 
+    .nav-links,
     .nav-links ul {
+        width: 100%;
         flex-direction: column;
         align-items: center;
     }
 
-    .nav-links li {
-        margin: 0;
+    .nav-links a {
+        width: 100%;
+        text-align: center;
     }
 
-    .project-list {
-        grid-template-columns: 1fr;
+    .nav-logo,
+    .nav-links {
+        display: block;
+        text-align: center;
+    }
+
+    /* Adjusted for the responsive nav */
+    .site-header {
+        text-align: center;
+    }
+
+    .content,
+    .skill--content,
+    .portfolio--content,
+    .about-container,
+    .project-list,
+    .project {
+        /* Set max-width to none and padding to a smaller value for small screens */
+        max-width: none;
+        padding: 10px;
+    }
+
+    .banner--content,
+    #contact {
+        margin-top: 0;
+        /* Remove additional top margin if it's causing spacing issues */
+    }
+
+    /* Adjust font sizes for smaller screens */
+    h1 {
+        font-size: 2em;
+        /* Adjust the font size for h1 */
+    }
+
+    h2 {
+        font-size: 1.5em;
+        /* Adjust the font size for h2 */
+    }
+
+    p {
+        font-size: 1em;
+        /* Adjust the font size for paragraphs */
     }
 }
