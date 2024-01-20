@@ -9,6 +9,7 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
+    color: #000000;
 }
 
 body {
