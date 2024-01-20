@@ -16,19 +16,16 @@
     <nav class="site-header">
         <div class="nav-logo">
             <a href="index.html">
-                <img src="assets/images/banner.png" alt="logo" width="314" height="60">
+                <img src="assets/images/banner.png" alt="logo">
             </a>
         </div>
-        <!-- <button class="hamburger"><img src="assets/images/menu.png" alt="menu toggle icon"></button> -->
         <div class="nav-links">
+            <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#skill">Skills</a></li>
-                <!-- <li><a href="#service">Services</a></li> -->
                 <li><a href="#portfolio">Portfolio</a></li>
-                <!-- <li><a href="#testimonial">Testimonial</a></li> -->
-                <!-- <li><a href="#pricing">Pricing</a></li> -->
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -229,6 +226,19 @@
         <script>
             AOS.init();
         </script>
+        
+    <!-- Hamburger Menu Toggle Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var hamburger = document.querySelector('.hamburger');
+            var navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', function() {
+                // This will toggle the 'active' class on the 'nav-links' element
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
