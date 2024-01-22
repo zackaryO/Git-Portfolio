@@ -143,6 +143,12 @@ a:hover {
     .nav-links ul.active {
         display: flex;
     }
+
+    /* Adjusting project list for smaller screens */
+    .project-list {
+        grid-template-columns: 1fr;
+        /* This makes each project take a full row */
+    }
 }
 
 /* Banner Section */
