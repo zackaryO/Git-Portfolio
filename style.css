@@ -149,6 +149,11 @@ a:hover {
         grid-template-columns: 1fr;
         /* This makes each project take a full row */
     }
+
+    .project-list {
+        grid-template-columns: 1fr;
+        /* This makes each project take a full row */
+    }
 }
 
 /* Banner Section */
