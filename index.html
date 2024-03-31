@@ -64,6 +64,10 @@
                     <li>Javascript</li>
                     <li>Angular</li>
                     <li>Web Design</li>
+                    <li>AWS Elastic Beanstalk</li>
+                    <li>AWS RDS</li>
+                    <li>AWS S3</li>
+                    <li>Docker</li>
                     <li>Node.js</li>
                     <li>Python</li>
                     <li>Java</li>
@@ -75,6 +79,8 @@
                     <li>MERN</li>
                     <li>MEAN</li>
                     <li>RESTful API</li>
+                    <li>PostgreSQL</li>
+                    <li>SQL</li>
                 </ul>
             </div>
         </section>
@@ -97,12 +103,12 @@
                             <img src="assets/images/lease_manger.gif" alt="Project 3 GIF">
                             <h4>Description:</h4>
                             <p>I am currently developing a dynamic website aimed at assisting a client with the
-                                management of trailer park leases and payments. This multifaceted application offers
-                                dual access points:</p>
+                                management of RV/Boat storage lot leases and payments. This multifaceted application
+                                offers
+                                dual access points:(SSR is present, but has no links)</p>
                             <ul>
                                 <li><strong>Server-Side Rendered (SSR) Pages:</strong> Using Django, which, while
-                                    functional, are pending further styling enhancements. (No links to access), the
-                                    navbar link to the Django admin login is not correct</li>
+                                    functional, are pending further styling enhancements. (No links to access)</li>
                                 <li><strong>Angular-based Client-Side Application:</strong> Communicates through APIs
                                     for a more interactive experience.</li>
                             </ul>
@@ -113,6 +119,17 @@
                                 authentication. Upon successful login, a token is issued to the user. This token is
                                 crucial as it not only verifies the user’s identity but also facilitates API requests by
                                 enforcing user-specific permissions, ensuring a secure and personalized user experience.
+                            </p>
+                            <h2>Beta Deployment</h2>
+                            <p>The Django backend it connected to a PostgreSQL database hosted on AWS RDS. User files
+                                such as lease documents an lot images are stored in AWS S3 buckets with there location
+                                url stored in the SQL and permission is controlled by Django.
+                                Both the Angular front-end and Django back-end applications are deployed as a docker
+                                multi-container using nginx as a reverse proxy to handle communication between the two
+                                in an AWS Elastic Beanstalk enviroment. Being that this the portfolio version, it does
+                                not have a domain and is running in a single instance without a AWS load balancer, it is
+                                not utilizing HTTPS (SSL), When deployed in production for the client it will be SSL in
+                                addition to a few other sercurity measures.
                             </p>
                             <p>This project is evolving, and continuous improvements are being made to both enhance the
                                 user interface and strengthen the security aspects of the application.</p>
