@@ -1,392 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zack Otterstrom - Software Engineer / Web Designer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zack Otterstrom &middot; Software Engineer &amp; Web Designer</title>
+  <meta name="description" content="Junior software engineer / web designer building production tools and personal projects, augmented by modern dev tools and AI.">
+  <link rel="icon" href="assets/images/banner.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <nav class="site-header">
-        <div class="nav-logo">
-            <a href="index.html">
-                <img src="assets/images/banner.png" alt="logo">
-            </a>
+
+<nav class="site-header" id="siteHeader">
+  <a class="nav-brand" href="#top">
+    <span class="nav-brand-mark">ZO</span>
+    <span class="nav-brand-text">Zack Otterstrom</span>
+  </a>
+  <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a class="nav-cta" href="https://github.com/zackaryO" target="_blank" rel="noopener">GitHub &nearr;</a>
+  </div>
+</nav>
+
+<header id="top" class="hero">
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Software Engineer &middot; Web Designer</p>
+    <h1 class="hero-title">
+      Building things that <span class="hero-accent">work in production</span>,<br>
+      and a few that just look cool.
+    </h1>
+    <p class="hero-sub">
+      Junior engineer / web designer, augmented by modern dev tools and AI.
+      Full-stack web, Android, and interactive 3D.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-ghost">Get in Touch</a>
+    </div>
+    <div class="hero-meta">
+      <span class="meta-pill">Production: <a href="https://bigtoa.com" target="_blank" rel="noopener">bigtoa.com</a></span>
+      <span class="meta-pill">Live: <a href="https://zackaryo.github.io/Alignment_Simulator/" target="_blank" rel="noopener">Alignment Sim</a></span>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span></span>
+  </div>
+</header>
+
+<section id="about" class="section">
+  <div class="section-inner">
+    <p class="section-eyebrow">01 &middot; About</p>
+    <h2 class="section-title">A builder, not just a coder.</h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <p>
+          I graduated in Computer Science from Weber State University and have spent the
+          last couple of years working on freelance projects and personal builds &mdash;
+          shipping a real production app, prototyping interactive 3D, and learning to
+          move fast with the new generation of AI-augmented dev tooling.
+        </p>
+        <p>
+          I care about clean architecture, secure-by-default systems, and UI that
+          actually feels good to use. I learn quickly, ask good questions, and like
+          working on problems where the answer isn't obvious yet.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">years post-grad shipping projects</span>
         </div>
-        <div class="nav-links">
-            <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skill">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="stat">
+          <span class="stat-num">1</span>
+          <span class="stat-label">production SaaS app live at bigtoa.com</span>
         </div>
-    </nav><!-- .site-header -->
-    <section class="banner">
-        <!-- <section class="banner"> -->
-        <div class="banner--content">
-            <h1 class="name">Zack Otterstrom</h1>
-            <h1 class="designation">Software Engineer / Web Designer</h1>
-            <p class="tagline">Recent Computer Science Graduate with a Passion for Building Things</p>
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">full-stack &amp; mobile builds across the stack</span>
         </div>
-        <!-- </section> -->
+      </div>
+    </div>
+  </div>
+</section>
 
-        <section id="about">
-            <div class="content">
-                <h1>About Me</h1>
-                <div class="about-container">
-                    <p>As a recent graduate in Computer Science from Weber State University, I have developed a strong
-                        foundation in software engineering principles. My academic journey has been marked by hands-on
-                        experience in a variety of technical areas through comprehensive class projects. I am
-                        detail-oriented, analytical, and have a keen interest in applying my skills to practical
-                        challenges
-                        in the field of software development. *I am in the process of publishing other projects that are
-                        currently in development</p>
-                </div>
-            </div>
-        </section>
+<section id="skills" class="section section-alt">
+  <div class="section-inner">
+    <p class="section-eyebrow">02 &middot; Skills</p>
+    <h2 class="section-title">The toolbox.</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <ul class="chips">
+          <li>TypeScript</li><li>JavaScript</li><li>Python</li>
+          <li>Java</li><li>SQL</li><li>HTML / CSS</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Frontend</h3>
+        <ul class="chips">
+          <li>Next.js</li><li>React</li><li>Angular</li>
+          <li>Chakra UI</li><li>Three.js</li><li>Responsive design</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Backend</h3>
+        <ul class="chips">
+          <li>Django REST</li><li>Node.js</li><li>Express</li>
+          <li>RESTful APIs</li><li>JWT auth</li><li>OAuth2</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Data &amp; Infra</h3>
+        <ul class="chips">
+          <li>PostgreSQL</li><li>MongoDB</li><li>Redis</li>
+          <li>AWS S3 / RDS / EB</li><li>Docker</li><li>Celery</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Mobile</h3>
+        <ul class="chips">
+          <li>Android (Java)</li><li>Google Play deploy</li><li>Local SQL (Room)</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>AI &amp; Modern Tooling</h3>
+        <ul class="chips">
+          <li>Anthropic Claude</li><li>Claude Code</li><li>AI-assisted dev</li>
+          <li>Prompt design</li><li>Stripe</li><li>GitHub Actions CI/CD</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <section id="skill">
-            <div class="content skill--content">
-                <h1>My Skills & Expertise</h1>
-                <ul>
-                    <li>Software Development Lifecycle</li>
-                    <li>Agile Frameworks</li>
-                    <li>Typescript</li>
-                    <li>Javascript</li>
-                    <li>Angular</li>
-                    <li>Web Design</li>
-                    <li>AWS Elastic Beanstalk</li>
-                    <li>AWS RDS</li>
-                    <li>AWS S3</li>
-                    <li>Docker</li>
-                    <li>Node.js</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>Android App Development</li>
-                    <li>Django Server Side</li>
-                    <li>Express.js</li>
-                    <li>React</li>
-                    <li>CSS</li>
-                    <li>MERN</li>
-                    <li>MEAN</li>
-                    <li>RESTful API</li>
-                    <li>PostgreSQL</li>
-                    <li>SQL</li>
-                </ul>
-            </div>
-        </section>
+<section id="projects" class="section">
+  <div class="section-inner">
+    <p class="section-eyebrow">03 &middot; Projects</p>
+    <h2 class="section-title">Featured work.</h2>
 
-        <section id="portfolio">
-            <h1 class="center">Portfolio - My Projects see link to GitHub to view code packages</h1>
-            <div class="content portfolio--content">
-                <!-- <p>During my time at Weber State University, I completed several projects...
-                    Click the project to view my repo.
-                </p> -->
+    <!-- BIGTOA -->
+    <article class="project-feature">
+      <div class="project-media">
+        <img src="assets/images/screenshots/bigtoa-home-1440.png" alt="BigToa.com home page screenshot" loading="lazy">
+        <img src="assets/images/screenshots/bigtoa-pricing.png" alt="BigToa pricing page screenshot" loading="lazy" class="project-media-secondary">
+      </div>
+      <div class="project-info">
+        <div class="project-badges">
+          <span class="badge badge-prod">Production</span>
+          <span class="badge">Source code private</span>
+        </div>
+        <h3 class="project-title">BigToa &mdash; AI Home Inventory</h3>
+        <p class="project-tag">Insurance &middot; Estate planning &middot; Collections</p>
+        <p class="project-body">
+          Full-stack SaaS that uses Anthropic Claude to extract structured data from
+          photos of personal belongings (make, model, serial, value), then organizes
+          everything for insurance claims, estate planning, and collection tracking.
+          Includes a zero-knowledge AES-256-GCM digital vault, two-trustee emergency
+          access, eBay / Facebook Marketplace integration, Stripe subscriptions,
+          passkey login, and SOC-2-style audit logging.
+        </p>
+        <ul class="project-stack">
+          <li>Next.js 16</li><li>TypeScript</li><li>Chakra UI v3</li>
+          <li>Django 5 / DRF</li><li>PostgreSQL</li><li>Redis</li>
+          <li>Celery</li><li>Stripe</li><li>Claude AI</li>
+          <li>AWS S3 / CloudFront</li><li>Render &amp; Vercel</li>
+        </ul>
+        <div class="project-cta">
+          <a class="btn-primary" href="https://bigtoa.com" target="_blank" rel="noopener">Visit bigtoa.com &nearr;</a>
+          <a class="btn-ghost" href="projects/big-toa/readme.html">README.md</a>
+          <a class="btn-ghost" href="projects/big-toa/security.html">SECURITY.md</a>
+        </div>
+        <p class="project-note">Source code is private. Reach out if you'd like a deeper architecture walkthrough.</p>
+      </div>
+    </article>
 
-                <!-- Angular with Django Section -->
-                <div class="technology-section">
-                    <h2>Angular & Django Projects (FULL-STACK)</h2>
-                    <div class="project-list">
-                        <!-- Project 3 -->
+    <!-- ALIGNMENT SIM -->
+    <article class="project-feature project-feature-flip">
+      <div class="project-media">
+        <img src="assets/images/screenshots/alignment-sim-1440.png" alt="Wheel Alignment Simulator screenshot" loading="lazy">
+      </div>
+      <div class="project-info">
+        <div class="project-badges">
+          <span class="badge badge-live">Live Demo</span>
+          <span class="badge">Interactive 3D</span>
+        </div>
+        <h3 class="project-title">Wheel Alignment Simulator</h3>
+        <p class="project-tag">Three.js &middot; Teaching aid for automotive technicians</p>
+        <p class="project-body">
+          An interactive 3D playground for understanding caster, camber, toe, and SAI.
+          Drag a slider and watch the wheel tilt; steer the car and watch the body lift.
+          Visualizes spindle / steering / toe axes with real-time geometry tracers and a
+          conceptual-vs-actual mode for teaching alignment math.
+        </p>
+        <ul class="project-stack">
+          <li>Three.js</li><li>Angular</li><li>TypeScript</li>
+          <li>WebGL</li><li>GitHub Pages</li>
+        </ul>
+        <div class="project-cta">
+          <a class="btn-primary" href="https://zackaryo.github.io/Alignment_Simulator/" target="_blank" rel="noopener">Try it live &nearr;</a>
+          <a class="btn-ghost" href="https://github.com/zackaryO/Alignment_Simulator" target="_blank" rel="noopener">View source on GitHub</a>
+        </div>
+      </div>
+    </article>
 
-                        <div class="project">
-                            <h3>Lease Manager</h3>
-                            <img src="assets/images/lease_manger.gif" alt="Project 3 GIF">
-                            <h4>Description:</h4>
-                            <p>I am currently developing a dynamic website aimed at assisting a client with the
-                                management of RV/Boat storage lot leases and payments. This multifaceted application
-                                offers
-                                dual access points:(SSR is present, but has no links)</p>
-                            <ul>
-                                <li><strong>Server-Side Rendered (SSR) Pages:</strong> Using Django, which, while
-                                    functional, are pending further styling enhancements. (No links to access)</li>
-                                <li><strong>Angular-based Client-Side Application:</strong> Communicates through APIs
-                                    for a more interactive experience.</li>
-                            </ul>
-                            <h2>Security and Authentication</h2>
-                            <p>A key feature of the Angular client-side application is its robust security framework. It
-                                leverages <strong>AuthGuard</strong> in conjunction with the <strong>Django API
-                                    framework</strong> and <strong>JavaScript Web Tokens (JWT)</strong> for user
-                                authentication. Upon successful login, a token is issued to the user. This token is
-                                crucial as it not only verifies the user’s identity but also facilitates API requests by
-                                enforcing user-specific permissions, ensuring a secure and personalized user experience.
-                            </p>
-                            <h2>Beta Deployment</h2>
-                            <p>The Django backend it connected to a PostgreSQL database hosted on AWS RDS. User files
-                                such as lease documents an lot images are stored in AWS S3 buckets with there location
-                                url stored in the SQL and permission is controlled by Django.
-                                Both the Angular front-end and Django back-end applications are deployed as a docker
-                                multi-container using nginx as a reverse proxy to handle communication between the two
-                                in an AWS Elastic Beanstalk enviroment. Being that this the portfolio version, it does
-                                not have a domain and is running in a single instance without a AWS load balancer, it is
-                                not utilizing HTTPS (SSL), When deployed in production for the client it will be SSL in
-                                addition to a few other sercurity measures.
-                            </p>
-                            <p>This project is evolving, and continuous improvements are being made to both enhance the
-                                user interface and strengthen the security aspects of the application.</p>
-                            <h4>Angular</h4>
-                            <img src="assets/images/lease.png" alt="code snippet ">
-                            <h4>Django</h4>
-                            <img src="assets/images/Django.png" alt="code snippet Django">
-                            <h4>UML Diagrams</h4>
-                            <h4>Authentication UML</h4>
-                            <img src="assets/images/authenticationUML.png" alt="authentication UML">
-                            <h4>Dashboard UML</h4>
-                            <img src="assets/images/dashboardUML.png" alt="dashboard UML">
-                            <h4>check it out</h4>
-                            <a href="https://github.com/zackaryO/lease_manager" target="_blank" class="project-link">
-                                <button style="font-size:24px">Lease Manager <i class="fa fa-github"></i></button>
-                            </a>
-                            <h4>try it out</h4>
-                            <a href="http://leasemanager-env.us-east-1.elasticbeanstalk.com/#/login" target="_blank"
-                                class="project-link">
-                                <button style="font-size:24px">Deployed Docker AWS Beta Version</button>
-                            </a>
-                            <p>username: admin, password: admin</p>
-                        </div>
+    <!-- LEASE MANAGER -->
+    <article class="project-feature">
+      <div class="project-media">
+        <img src="assets/images/lease_manger.gif" alt="Lease Manager dashboard demo" loading="lazy">
+      </div>
+      <div class="project-info">
+        <div class="project-badges">
+          <span class="badge badge-live">Beta &middot; AWS Deployed</span>
+          <span class="badge">Full-stack</span>
+        </div>
+        <h3 class="project-title">Lease Manager</h3>
+        <p class="project-tag">RV / Boat storage lot lease &amp; payment management</p>
+        <p class="project-body">
+          A dynamic web app for managing RV and boat storage leases. Angular SPA backed
+          by a Django REST API with JWT + AuthGuard, deployed as a multi-container Docker
+          stack to AWS Elastic Beanstalk with PostgreSQL on RDS and lease documents in S3.
+        </p>
+        <ul class="project-stack">
+          <li>Angular</li><li>Django REST</li><li>PostgreSQL</li>
+          <li>JWT</li><li>Docker</li><li>AWS RDS / S3 / EB</li>
+        </ul>
+        <div class="project-cta">
+          <a class="btn-primary" href="http://leasemanager-env.us-east-1.elasticbeanstalk.com/#/login" target="_blank" rel="noopener">Live AWS demo &nearr;</a>
+          <a class="btn-ghost" href="https://github.com/zackaryO/lease_manager" target="_blank" rel="noopener">View source</a>
+        </div>
+        <p class="project-note">Demo login: <code>admin</code> / <code>admin</code> &middot; running on a single instance without SSL for the portfolio version.</p>
+      </div>
+    </article>
 
+    <!-- OTHER WORK -->
+    <h3 class="other-work-title">Other work &amp; coursework</h3>
+    <p class="other-work-sub">Earlier full-stack, mobile, and academic projects.</p>
+    <div class="project-grid">
 
-                        <!-- Project 4 -->
+      <article class="project-card">
+        <img src="assets/images/Z-Recipies.gif" alt="Z-Recipes Android app" loading="lazy">
+        <div class="project-card-body">
+          <span class="badge">Android &middot; Google Play</span>
+          <h4>Z-Recipes</h4>
+          <p>Android app that fetches recipes from a third-party API and caches them in a local Room SQL database. Published on Google Play.</p>
+          <div class="project-card-cta">
+            <a href="https://github.com/zackaryO/ZRecipes" target="_blank" rel="noopener">Source</a>
+            <a href="https://play.google.com/store/apps/details?id=com.tracks.zrecipes&pli=1" target="_blank" rel="noopener">Google Play &nearr;</a>
+          </div>
+        </div>
+      </article>
 
-                        <div class="project">
-                            <h3>Portfolio</h3>
-                            <img src="assets/images/portfolio.gif" alt="Project 3 GIF">
-                            <h4>Description:</h4>
-                            <p>This project, currently a work in progress, originated as a final project for two
-                                classes:</p>
-                            <ul>
-                                <li><strong>CS 3620:</strong> Server-side web development using Python with the Django
-                                    framework.</li>
-                                <li><strong>CS 3650:</strong> Computer/human interaction.</li>
-                            </ul>
-                            <h2>Django Backend Implementation</h2>
-                            <p>The Django side of the project utilizes multiple SQL databases, catering to user accounts
-                                with authentication features and portfolio artifacts. The server employs server-side
-                                rendered pages for site maintenance, specifically CRUD (Create, Read, Update, Delete)
-                                operations. This is achieved using Django's serializers, views, and templates.</p>
-                            <h2>Angular Frontend Development</h2>
-                            <p>For the frontend, I have focused on demonstrating UI design principles and have chosen
-                                Angular for this purpose. Angular efficiently fetches data from the backend server using
-                                Restful API calls, ensuring seamless integration between the frontend and backend
-                                components of the project.</p>
-                            <h4>Angular</h4>
-                            <img src="assets/images/portfolio_(angular).png" alt="code snippet Angular">
-                            <h4>Django</h4>
-                            <img src="assets/images/portfolio_(Django).png" alt="code snippet Django">
-                            <a href="https://github.com/zackaryO/Portfolio" target="_blank" class="project-link">
-                                <button style="font-size:24px">Portfolio <i class="fa fa-github"></i></button>
-                            </a>
-                        </div>
+      <article class="project-card">
+        <img src="assets/images/Time_Tracker.png" alt="Time Tracker capstone" loading="lazy">
+        <div class="project-card-body">
+          <span class="badge">Capstone &middot; SEAN stack</span>
+          <h4>Time Tracker</h4>
+          <p>University capstone inherited from a prior team. Added course-enrollment requests, instructor approval flow, and a templated evaluation system.</p>
+          <div class="project-card-cta">
+            <a href="https://github.com/zackaryO/TimeTrackerFall23" target="_blank" rel="noopener">Source</a>
+          </div>
+        </div>
+      </article>
 
-                    </div>
-                </div>
+      <article class="project-card">
+        <img src="assets/images/mernGrid.png" alt="MERN grid word finder" loading="lazy">
+        <div class="project-card-body">
+          <span class="badge">MERN &middot; Group project</span>
+          <h4>Grid Word Finder</h4>
+          <p>Mongo / Express / React / Node group project with server-side game state, MongoDB-backed sessions, and centralized auth.</p>
+          <div class="project-card-cta">
+            <a href="https://github.com/zackaryO/group4_project4_cs3750" target="_blank" rel="noopener">Source</a>
+          </div>
+        </div>
+      </article>
 
+      <article class="project-card">
+        <img src="assets/images/MERN_Guess.gif" alt="MERN guessing game" loading="lazy">
+        <div class="project-card-body">
+          <span class="badge">MERN</span>
+          <h4>Guessing Game</h4>
+          <p>Software Engineering II coursework. Mongo-backed guessing game with an Express API, React frontend, and environment-driven config.</p>
+          <div class="project-card-cta">
+            <a href="https://github.com/zackaryO/3750-Guessing-Game" target="_blank" rel="noopener">Source</a>
+          </div>
+        </div>
+      </article>
 
-                <div class="technology-section">
-                    <h2>SQL Angular Express Node (SEAN)(FULL-STACK)</h2>
-                    <div class="project-list">
-                        <!-- Project 3 -->
+      <article class="project-card">
+        <img src="assets/images/scraper.png" alt="Site scraper" loading="lazy">
+        <div class="project-card-body">
+          <span class="badge">Django &middot; SSR</span>
+          <h4>Site Scraper</h4>
+          <p>Final project for CS 3620. Django app that scrapes and lists every link from a given URL using server-side rendering.</p>
+          <div class="project-card-cta">
+            <a href="https://github.com/zackaryO/Site-Scrapper" target="_blank" rel="noopener">Source</a>
+          </div>
+        </div>
+      </article>
 
-                        <div class="project">
-                            <h3>Time Tracker</h3>
-                            <img src="assets/images/Time_Tracker.png" alt="Project 3 GIF">
-                            <h4>Description:</h4>
-                            <p>This project, a collaborative effort undertaken as our University Capstone project, was
-                                inherited from a team that developed it in the previous semester. The project integrates
-                                Angular for the front-end and Node.js with Express for the back-end, with RESTful APIs
-                                facilitating communication between the two. My contributions involved enhancing the
-                                codebase by improving clarity, functionality, and rectifying existing bugs. The
-                                following is a summary of my specific contributions, completed independently but in
-                                harmony with the work of others.</p>
-                            <p>One of my notable contributions is the development of a feature that enables students to
-                                request enrollment in a course. This functionality extends to notifying instructors of
-                                such requests, empowering them to approve or deny them. Upon approval, the student is
-                                officially enrolled in the course. Additionally, this feature includes the option for
-                                students to withdraw their requests at any stage.</p>
-                            <img src="assets/images/register1.png" alt="request to join course ">
-                            <img src="assets/images/register2.png" alt="request sent ">
-                            <img src="assets/images/register3.png" alt="approve or deny ">
-                            <h4>Angular</h4>
-                            <img src="assets/images/join.png" alt="code snippet ">
-                            <h4>Node, Express and SQL</h4>
-                            <img src="assets/images/Node_and_Express.png" alt="code snippet">
-                            <h4>Register UML</h4>
-                            <img src="assets/images/RegisterUML.png" alt="Register UML">
-                            <p>I developed the Evaluation functionality, allowing the instructor to create evaluation
-                                containing either text responses or ratings. Each instructor is able to save groups of
-                                questions as
-                                templates for future use. These questions
-                                can be edited.
-                            </p>
-                            <img src="assets/images/evals.png" alt="eval components ">
-                            <h4>Angular</h4>
-                            <img src="assets/images/evalComponent.png" alt="code snippet ">
-                            <h4>Node and Express</h4>
-                            <img src="assets/images/evalnode.png" alt="code snippet">
-                            <h4>Eval UML</h4>
-                            <img src="assets/images/template.png" alt="Eval UML">
-                            <a href="https://github.com/zackaryO/TimeTrackerFall23" target="_blank"
-                                class="project-link">
-                                <button style="font-size:24px">Time Tacker <i class="fa fa-github"></i></button>
-                            </a>
-                            <p>*NOTE: I realize that much of this code doesn't follow best practices, improving this was
-                                outside of the scope of our project.</p>
-                        </div>
-                    </div>
-                </div>
+      <article class="project-card">
+        <img src="assets/images/BMI.gif" alt="BMI calculator Android app" loading="lazy">
+        <div class="project-card-body">
+          <span class="badge">Android &middot; Java</span>
+          <h4>BMI Calculator</h4>
+          <p>CS 3270 mobile-development coursework. Simple Android calculator demonstrating layouts, lifecycle, and unit conversion.</p>
+          <div class="project-card-cta">
+            <a href="https://github.com/zackaryO/CS3270MI" target="_blank" rel="noopener">Source</a>
+          </div>
+        </div>
+      </article>
 
-                <!-- Android Development (Java) Section -->
-                <div class="technology-section">
-                    <h2>Android Development (Java)</h2>
-                    <div class="project-list">
-                        <!-- Project 1: Z-Recipies -->
-                        <div class="project">
+      <article class="project-card">
+        <img src="assets/images/portfolio.gif" alt="Older Angular + Django portfolio" loading="lazy">
+        <div class="project-card-body">
+          <span class="badge">Angular &middot; Django</span>
+          <h4>Earlier Portfolio (CS 3650)</h4>
+          <p>Two-class capstone: Django CRUD + multi-DB backend, Angular frontend consuming the API. Predecessor to this site.</p>
+          <div class="project-card-cta">
+            <a href="https://github.com/zackaryO/Portfolio" target="_blank" rel="noopener">Source</a>
+          </div>
+        </div>
+      </article>
 
-                            <h3>Z-Recipies</h3>
-                            <img src="assets/images/Z-Recipies.gif" alt="Project 1 GIF">
-                            <h4>Description:</h4>
-                            <p>This project was developed as my final assignment for the course CS 3270 - Mobile
-                                Development for Android. The application is designed to fetch recipe information using
-                                an API call from a third-party provider. It features a local SQL database, implemented
-                                with Entity, for temporarily storing the search results. This application has the
-                                distinction of being published on Google Play. Future development plans include
-                                enhancing the app’s utility by introducing features such as searching recipes by name
-                                and enabling users to create their own recipe cards.</p>
-                            <img src="assets/images/BMI.png" alt="code snippet ">
-                            <a href="https://github.com/zackaryO/ZRecipes" target="_blank" class="project-link">
-                                <button style="font-size:24px">Z-Recipies <i class="fa fa-github"></i></button>
-                            </a>
-                            <a href="https://play.google.com/store/apps/details?id=com.tracks.zrecipes&pli=1"
-                                target="_blank" class="google-play-button">
-                                <button>See in Google Play</button>
-                            </a>
-                        </div>
+    </div>
+  </div>
+</section>
 
-                        <!-- Project 2: BMI Calculator -->
-                        <div class="project">
+<section id="contact" class="section section-alt">
+  <div class="section-inner contact-inner">
+    <p class="section-eyebrow">04 &middot; Contact</p>
+    <h2 class="section-title">Let's build something.</h2>
+    <p class="contact-lede">
+      Open to freelance, contract, and full-time roles. Best way to reach me is email.
+    </p>
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:zotterstrom@gmail.com">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">zotterstrom@gmail.com</span>
+      </a>
+      <a class="contact-card" href="https://www.linkedin.com/in/zack-otterstrom-13092964" target="_blank" rel="noopener">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">/in/zack-otterstrom &nearr;</span>
+      </a>
+      <a class="contact-card" href="https://github.com/zackaryO" target="_blank" rel="noopener">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">@zackaryO &nearr;</span>
+      </a>
+    </div>
+  </div>
+</section>
 
-                            <h3>BMI Calculator</h3>
-                            <img src="assets/images/BMI.gif" alt="Project 2 GIF">
-                            <h4>Description:</h4>
-                            <p>This is a project from CS 3270, this one is used to calculate the BMI score.</p>
-                            <img src="assets/images/BMI.png" alt="code snippet ">
-                            <a href="https://github.com/zackaryO/CS3270MI" target="_blank" class="project-link">
-                                <button style="font-size:24px">BMI Calculator <i class="fa fa-github"></i></button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+<footer class="site-footer">
+  <p>&copy; 2026 Zack Otterstrom &middot; Designed &amp; built from scratch.</p>
+</footer>
 
-
-                <!-- React with Node.js Section -->
-                <div class="technology-section">
-                    <h2>Mongo Express React Node (MERN)(Full-Stack)</h2>
-                    <div class="project-list">
-
-
-                        <div class="project">
-                            <h3>MERN Grid Word Finder</h3>
-                            <img src="assets/images/mernGrid.png" alt="Project 2 GIF">
-                            <h4>Description:</h4>
-                            <p>The core of this assignment was developing a Grid Word Finder Game, as detailed in the
-                                README on our GitHub repository. This was a collaborative group project where user
-                                authentication and game logic were centrally managed on the server. We utilized sessions
-                                for user authentication, leveraging the capabilities of the Mongo sessions server.</p>
-                            <img src="assets/images/mongo1.png" alt="mongo">
-                            <img src="assets/images/mongo2.png" alt="mongo">
-                            <a href="https://github.com/zackaryO/group4_project4_cs3750" target="_blank"
-                                class="project-link">
-                                <button style="font-size:24px">MERN Grid Word Finder <i
-                                        class="fa fa-github"></i></button>
-                            </a>
-                        </div>
-
-
-                        <div class="project">
-                            <h3>MERN Guessing Game</h3>
-                            <img src="assets/images/MERN_Guess.gif" alt="Project 2 GIF">
-                            <h4>Description:</h4>
-                            <p>This project formed a part of our coursework for the 3750 Software Engineering II class.
-                                To effectively execute this assignment, it's necessary to set up a MongoDB database.
-                                After the database is in place, the next crucial step is to update the .env file with
-                                the appropriate MongoDB connection string. This setup is vital for the assignment's
-                                functionality and integration with the database.</p>
-                            <img src="assets/images/guess.png" alt="code snippet ">
-                            <a href="https://github.com/zackaryO/3750-Guessing-Game" target="_blank"
-                                class="project-link">
-                                <button style="font-size:24px">MERN Guessing Game <i class="fa fa-github"></i></button>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Django Section -->
-                <div class="technology-section">
-                    <h2>Django Server Side Rendered with SQLite3 (SSR)</h2>
-                    <div class="project-list">
-                        <!-- Project 1: Z-Recipies -->
-                        <div class="project">
-
-                            <h3>Site Scraper</h3>
-                            <img src="assets/images/scraper.png" alt="scraper">
-                            <h4>Description:</h4>
-                            <p>This project was developed as my final assignment for CS 3620, focusing on server-side
-                                web development using Python with the Django framework. The application is designed to
-                                scrape and retrieve all links from any given URL, showcasing the powerful capabilities
-                                of Python and Django in web scraping and data extraction.</p>
-                            <img src="assets/images/scrapercode.png" alt="code snippet ">
-                            <a href="https://github.com/zackaryO/Site-Scrapper" target="_blank" class="project-link">
-                                <button style="font-size:24px">Site Scraper <i class="fa fa-github"></i></button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-        <section id="contact">
-            <div class="content">
-                <h2 class="center">Contact Me</h2>
-                <p>Email: ZOTTERSTROM@GMAIL.COM</p>
-                <p>LinkedIn: <a
-                        href="https://www.linkedin.com/in/zack-otterstrom-13092964">https://www.linkedin.com/in/zack-otterstrom-13092964</a>
-                </p>
-            </div>
-        </section>
-
-        <footer class="site-footer">
-            <!-- <p>&copy; <time datetime="2023">2023,</time> Zack Otterstrom. All rights reserved.</p> -->
-        </footer>
-
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-
-        <!-- Hamburger Menu Toggle Script -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var hamburger = document.querySelector('.hamburger');
-                var navLinks = document.querySelector('.nav-links');
-
-                hamburger.addEventListener('click', function () {
-                    // This will toggle the 'active' class on the 'nav-links' element
-                    navLinks.classList.toggle('active');
-                });
-            });
-        </script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>
