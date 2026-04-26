@@ -34,7 +34,7 @@ Or press `Ctrl+Shift+B` in VS Code and select **"Start BigToa (frontend + backen
 ```text
 Frontend       Next.js 16, TypeScript 5.8, Chakra UI v3, React 19
 Backend        Django 5.2, Django REST Framework 3.15, Python 3.11+
-Database       PostgreSQL 14+, Redis (cache + Celery broker)
+Database       PostgreSQL 18, Redis (cache + Celery broker)
 Auth           JWT (HttpOnly cookies), Google OAuth, Magic Links, WebAuthn/Passkeys, TOTP MFA
 AI             Anthropic Claude (Sonnet 4.5 for demos, Haiku for production)
 Payments       Stripe (subscriptions, trials, lifetime offers, webhooks)
@@ -262,7 +262,7 @@ CI/CD runs on every PR: ESLint, Jest, Playwright E2E, accessibility, Lighthouse 
 
 ## Environment
 
-Requires Python 3.11+, Node.js 20+, PostgreSQL 14+. Full environment variable reference is maintained in the project's internal Developer Guide.
+Requires Python 3.11+, Node.js 20+, PostgreSQL 18. Full environment variable reference is maintained in the project's internal Developer Guide.
 
 ---
 
